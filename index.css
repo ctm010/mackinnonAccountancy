@@ -1,0 +1,157 @@
+html {
+    font-size: 20px;
+    font-family: 'Lato';
+    background-color: white;
+}
+
+.mainImageContainer{
+    position: relative;
+    width: 100%; /* Set the width of your image container */
+    height: auto; /* Set the height of your image container */
+    overflow: hidden;
+    z-index: 900;
+}
+
+.mainImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.4));
+}
+
+.mainImage {
+    width: 100%;
+    height: 600px; /*change as screen gets smaller*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    object-fit: cover; 
+    background-size: cover;
+}
+
+.mainImageBody {
+    position: absolute;
+    z-index: 1000; 
+    text-align: left;
+    color: white; 
+    margin-top: 8%; /*change*/
+    padding-left: 7%;
+
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contactIcons {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 0; 
+}
+
+.contactIcons a{
+    padding-right: 10%;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.certificationContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 100%;
+    height: 150px;
+    background-color: #1a3349;
+}
+
+.certificationContainer img {
+    width: auto;
+    max-width: 100%;
+    height: 75%;
+    display: block;
+    margin: auto;
+}
+
+.mainImageBodyTop  {
+    font-size: 1.3rem;
+    text-decoration: bold;
+}
+
+.mainImageBodyMiddle  {
+    font-size: 2.1rem;
+    width: 45%;
+}
+
+.mainImageBodyBottom  {
+    font-size: 1.1rem;
+}
+
+.mainImageBodyBottom p {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+    .mainImage {
+        height: 450px;
+    }
+
+    .mainImageBodyTop  {
+        font-size: 1.0rem;
+    }
+    
+    .mainImageBodyMiddle  {
+        font-size: 1.4rem;
+    }
+    
+    .mainImageBodyBottom  {
+        font-size: 0.9rem;
+    }
+
+    .mainImageBodyBottom p{
+        margin-top: 0px;
+    }
+    
+    .mainImageBody p {
+        margin-bottom: 0px;
+        margin-top: 10%;
+    }
+
+    .contactIcons a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .mainImageBodyMiddle{
+        font-size: 1.2rem;
+    }
+
+    .mainImageBody {
+        margin-top: 20%;
+    }
+
+    
+    .mainImageBodyTop{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1250px){
+    .mainImageBodyMiddle{
+        width: 65%;
+    }
+}
+
+@media (max-width: 625px){
+
+    .mainImageBodyMiddle{
+        width: 90%;
+    }
+}
