@@ -18,12 +18,12 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 50%);
 }
 
 .mainImage {
     width: 100%;
-    height: 600px; /*change as screen gets smaller*/
+    height: 650px; /*change as screen gets smaller*/
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -66,27 +66,43 @@ html {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     max-width: 100%;
-    height: 150px;
+    height: 175px;
     background-color: #1a3349;
+}
+
+
+@media (max-width: 580px){
+    .certificationContainer {
+        height: 120px;
+    }
 }
 
 .certificationContainer img {
     width: auto;
-    max-width: 100%;
-    height: 75%;
+    /* max-width: 100%; */
+    height: 80%;
     display: block;
     margin: auto;
 }
 
+
 .mainImageBodyTop  {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-decoration: bold;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
 }
 
-.mainImageBodyMiddle  {
-    font-size: 2.1rem;
-    width: 45%;
+.mainImageBodyTop p {
+    margin-top: 0;
 }
+
+.mainImageBodyTop h1 {
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+
 
 .mainImageBodyBottom  {
     font-size: 1.1rem;
@@ -99,17 +115,17 @@ html {
 
 @media (max-width: 800px) {
     .mainImage {
-        height: 450px;
+        height: 500px;
     }
 
-    .mainImageBodyTop  {
+    .mainImageBodyTop  p{
         font-size: 1.0rem;
     }
-    
-    .mainImageBodyMiddle  {
-        font-size: 1.4rem;
+
+    .mainImageBodyTop h1{
+        font-size: 2.8rem;
     }
-    
+      
     .mainImageBodyBottom  {
         font-size: 0.9rem;
     }
@@ -118,9 +134,9 @@ html {
         margin-top: 0px;
     }
     
-    .mainImageBody p {
+    .mainImageBody p{
         margin-bottom: 0px;
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
 
     .contactIcons a{
@@ -129,9 +145,6 @@ html {
 }
 
 @media (max-width: 500px){
-    .mainImageBodyMiddle{
-        font-size: 1.2rem;
-    }
 
     .mainImageBody {
         margin-top: 20%;
@@ -141,17 +154,35 @@ html {
     .mainImageBodyTop{
         font-size: 0.8rem;
     }
-}
 
-@media (max-width: 1250px){
-    .mainImageBodyMiddle{
-        width: 65%;
+    .mainImageBodyTop  p{
+        font-size: 0.7rem;
+    }
+
+    .mainImageBodyTop h1{
+        font-size: 2rem;
+    }
+
+    .callButton p{
+        font-size: 0.75rem;
     }
 }
 
-@media (max-width: 625px){
 
-    .mainImageBodyMiddle{
-        width: 90%;
-    }
+.callButton button{
+    font-size: 1.0rem;
+    font-weight: 500;
+    border: 3px solid #F1B145;
+    background-color: transparent;
+    color: #F1B145;
+    padding: 10px 20px;
+}
+
+.callButton button:hover{
+    transform: translate(10px);
+    transition: all ease 0.3s;
+
+    /* background-color: white;
+    color: black;
+    border: 3px solid white; */
 }

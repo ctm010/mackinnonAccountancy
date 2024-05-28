@@ -29,6 +29,10 @@ footer {
     padding: 0;
 }
 
+.footerSection span a{
+    color: white;
+}
+
 .footer-section ul li {
     margin-bottom: 8px;
 }

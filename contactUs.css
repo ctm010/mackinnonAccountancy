@@ -1,0 +1,87 @@
+#contact{
+    width: 100%;
+    background-color: #1a3349;
+}
+
+.contactUsContainer {
+    padding: 2% 10%;
+}
+
+.contactUsContainer h1 {
+    color: white;
+    margin-bottom: 13px;
+}
+
+.contactUsContainer p{
+    color: rgb(213, 213, 213);
+    font-stretch: ultra-expanded; 
+}
+
+.contactUsIcon i{
+    color: whitesmoke;
+    padding-right: 3%;
+    font-size: 23px;
+    width: 30px;
+    align-items: center;
+}
+
+
+.contactUsIcons {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 5%; */
+    padding-top: 4.5%;
+    padding-bottom: 2.5%;
+    width: 60%;
+}
+
+.contactUsIcon {
+    padding: 7px 0px;
+    height: 50px;
+}
+
+.contactUsIcon a{
+    color: white;
+}
+
+.contactUsIconContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactUsLogo {
+    width: 40%;
+    padding-right: 5%;
+}
+
+.contactUsLogo img {
+    width: 75%;
+    height: auto;
+    float: right;
+}
+
+@media (max-width: 1150px){
+    .contactUsLogo img {
+        display: none;
+    }
+
+    .contactUsIcons {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px){
+    .contactUsIcon span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 400px){
+    .contactUsIcon span {
+        font-size: 0.6rem;
+    }
+
+    .contactUsIcon {
+        padding: 3px 0px;
+    }
+}

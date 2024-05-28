@@ -1,0 +1,101 @@
+#aboutUs {
+    width: 100%;
+}
+
+.headerImage {
+    position: relative;
+    text-align: center;
+}
+
+.headerImage img{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    object-fit: cover; 
+    object-position: 30% 40%;
+    background-size: cover;
+}
+
+.headerImageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 50%);
+}
+
+.headerImageTitle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headerImageTitle h1 {
+    color: white;
+    font-size: 6.8rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.headerImageTitle span {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1340px) {
+    .headerImage img {
+        height: 500px;
+    }
+
+    .headerImageTitle h1 {
+        font-size: 4.5rem;
+    }
+
+    .headerImageTitle span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .headerImage img {
+        height: 400px;
+    }
+
+    .headerImageTitle h1 {
+        font-size: 3.3rem;
+    }
+
+    .headerImageTitle span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerImageTitle h1 {
+        font-size: 2.5rem;
+    }
+
+    .headerImageTitle span {
+        font-size: 0.9rem;
+    }
+}
+
+.aboutUsContent {
+    margin: 3% auto;
+    width: 70%;
+    margin-bottom: 6%;
+}
+
+.aboutUsContent h2{
+    color: #1a3349;
+}
+
+.aboutUsContent img {
+    width: 41%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

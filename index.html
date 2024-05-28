@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MacKinnon Accountancy | Hervey Bay | Tax Returns, Planning, and Bookeeping</title>
+    <title>MacKinnon Accountancy | Hervey Bay | Tax Returns, Planning, and Bookkepping</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="indexServices.css">
     <link rel="stylesheet" href="indexGoogleReviews.css">
-    <!-- <link rel="stylesheet" href="indexContactUs.css"> -->
+    <link rel="stylesheet" href="contactUs.css"> 
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <script src="https://kit.fontawesome.com/9a7f8b9674.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="nav" id="nav">
-      <div class="navImage">
-        <img src="images/4.png" alt="MacKinnon Accountancy in Hervey Bay" height="auto" width="50%">
+
+    
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <!-- <div class="nav-header">
+      </div> -->
+      <div class="logo">
+
+        <img src="images/4.png">
+
       </div>
-      <a href="#home" class="active">Home</a>
-      <a onclick="window.location.href='blog.html';">News</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <!-- <a href="" id="active">Home</a> -->
+        <a href="aboutUs.html">About Us</a>
+        <a href="infoAccounting.html">Accounting Services</a>
+        <a href="infoBusiness.html">Business Strategy</a>
+        <a href="infoBookeeping.html">Bookkepping</a>
+      </div>
     </div>
+
 
     <div class="mainImageContainer">
         <div class="mainImageBody">
           <body>
             <div class="mainImageBodyTop">
-              <span>Want to maximise your tax returns?</span>
+              <h1>MACKINNON ACCOUNTANCY</h1><br>
+              <p>SERVICING HERVEY BAY AND BEYOND</p>
             </div>
 
+
             <div class="mainImageBodyMiddle">
-              <p>MacKinnon Accountancy is here
-              for all your <span class="under">tax return</span>, <span class="under">planning</span>
-              and <span class="under">bookeeping</span> needs</p>
+              
+            
+
+              <!-- <div class="contactIcons">
+                <a href="tel: +61481798702"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto: cmackinnon2134@gmail.com'"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61551614700971" target="_blank"><i class="fab fa-facebook"></i></a>
+              </div> -->
             </div>
 
             <div class="mainImageBodyBottom">
-              <p>Contact Us</p><br>
-            
-
-              <div class="contactIcons">
-                <a href="tel: +61481798702"><i class="fa-solid fa-phone"></i></a>
-                <a href="mailto: cmackinnon2134@outlook.com'"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61551614700971" target="_blank"><i class="fab fa-facebook"></i></a>
+              <div class="callButton">
+                <a href="tel: +61481798702"><button><p>CALL 0481 798 702</p></button></a>
               </div>
             </div>
+
           </body>
         </div>
         <div class="mainImageOverlay"></div>
-        <img class="mainImage" src="images/sampleImage1.jpg" alt="Accountancy in Hervey Bay">
+        <img class="mainImage" src="images/callumBusinessCard.png" alt="Accountancy in Hervey Bay">
     </div>
 
     <div class="certificationContainer">
@@ -60,26 +83,26 @@
     </div>
 
     <div id="services">
-      <div class="servicesHeading">
-        <h1>Our Services</h1>
-      </div>
       <div class="servicesContainer">
         <div class="service">
           <img src="icons/tax returns icon.png" alt="Tax Return Services in Hervey Bay">
-          <h2>Tax Returns</h2>
-          <p>Tax return services for both <br> individuals and businesses</p>
+          <h2>Accounting </h2>
+          <p>Accounting services for both <br> individuals and businesses</p> 
+          <a href="infoAccounting.html"><button><span>Learn More</span></button></a>
         </div>
 
         <div class="service">
           <img src="icons/tax planning icon.png" alt="Tax Planning Services in Hervey Bay">
-          <h2>Tax Planning</h2>
-          <p>Solutions for tax minimisation and<br> other tax-related issues</p>
+          <h2>Business Strategy</h2>
+          <p>Business building and strategy for<br> new and existing businesses</p>
+          <a href="infoBusiness.html"><button><span>Learn More</span></button></a>
         </div>
 
         <div class="service">
-          <img src="icons/bookeeping icon.png" alt="Bookeeping Services in Hervey Bay">
-          <h2>Bookeeping</h2>
+          <img src="icons/bookeeping icon.png" alt="Bookkepping Services in Hervey Bay">
+          <h2>Bookkepping</h2>
           <p>Management of Business Accounts, <br> GST and Payroll</p>
+          <a href="infoBookeeping.html"><button><span>Learn More</span></button></a>
         </div>
       </div>
     </div>
@@ -105,7 +128,7 @@
               <div class="userImage"><img src="icons/user icon.webp"></div>
               <!-- user details -->
               <div class="userDetails">
-                <strong>Joel Sweeney</strong>
+                <strong>Joel S.</strong>
                 <span>20/11/2023
                 </span>
               </div>
@@ -138,7 +161,7 @@
                   <div class="userImage"><img src="icons/user icon.webp"></div>
                   <!-- user details -->
                   <div class="userDetails">
-                    <strong>Micah Radic</strong>
+                    <strong>Micah R.</strong>
                     <span>23/01/2024</span>
                   </div>
                 </div>
@@ -173,7 +196,7 @@
               <div class="userImage"><img src="icons/user icon.webp"></div>
               <!-- user details -->
               <div class="userDetails">
-                <strong>David Harthog</strong>
+                <strong>David H.</strong>
                 <span>15/11/2023</span>
               </div>
             </div>
@@ -196,18 +219,53 @@
       </div>
 
     </div>
+
+    <!-- contact us section -->
+    <div id="contact">
+      <div class="contactUsContainer">
+        <h1>Want to get on board?</h1>
+        <p>Get in contact with us for your next accounting inquiry.</p>
+        
+      <div class="contactUsIconContainer">
+        <div class="contactUsIcons">
+
+          <div class="contactUsIcon">
+          <i class="fa fa-phone" aria-hidden="true"></i><span> <a href="tel: +61481798702">PHONE | 0481 798 702</a></span>
+          </div>
+
+          <div class="contactUsIcon">
+          <i class="fa fa-envelope" aria-hidden="true"></i> <span><a href="mailto: cmackinnon2134@gmail.com'">EMAIL | cmackinnon2134@gmail.com</a></span>
+          </div>
+
+          <div class="contactUsIcon">
+          <i class="fa fa-facebook" aria-hidden="true"></i> <span> <a href="https://www.facebook.com/profile.php?id=61551614700971" target="_blank">FACEBOOK | MacKinnon Accountancy</a></span>
+          </div>
+
+        </div>
+
+        <div class="contactUsLogo">
+
+          <img src="images/2.png" >
+
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+
   </div>
 
 
   <footer>
     <div class="footerContainer">
         <div class="footerSection">
-            <span> Home | About Us | Services</span>
+          <span> <a href="index.html">Home</a> | <a href="aboutUs.html">About Us</a> | <a href="index.html#services">Services</a></span>
         </div>
         
         <div class="footerSection socialIcons">
             <a href="tel: +61481798702"><i class="fa-solid fa-phone"></i></a>
-            <a href="mailto: cmackinnon2134@outlook.com'"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto: cmackinnon2134@gmail.com'"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://www.facebook.com/profile.php?id=61551614700971" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
     </div>
@@ -232,7 +290,7 @@
             window.location.href = 'tel:' + phoneNumber;
         });
 
-        var email = 'cmackinnon2134@outlook.com';
+        var email = 'cmackinnon2134@gmail.com';
 
         //function to send email
         document.getElementById('mailIcon').addEventListener('click', function () {
